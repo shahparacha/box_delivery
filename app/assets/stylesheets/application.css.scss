@@ -1,0 +1,299 @@
+@charset 'utf-8';
+
+@import 'bourbon';
+@import 'base/grid-settings';
+@import 'neat';
+@import 'base/base';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+li {
+ list-style-type: none;
+}
+
+ul {
+ list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding:0;
+}
+
+.topBar {
+  height:2.5vw;
+  width:100vw;
+  border-top: 1px solid #B8B8B8;
+  border-bottom: 1px solid #B8B8B8;
+  background-color: #FAFAFA;
+}
+
+.sans-font {
+ font-family: 'Open Sans', sans-serif;	
+}
+
+.medium-grey {
+  color:#B8B8B8;	
+}
+
+.segueButton {
+  font-size: 2vw;
+  padding: 0 1.5vw 0 1.5vw;
+  border-left:1px solid #B8B8B8;
+  border-right:1px solid #B8B8B8;
+  float:right;
+  height:100%;
+  line-height:2.5vw;
+  cursor:pointer;
+}
+
+.warning {
+  border: 1px solid #f00!important;
+}
+
+.title {
+  width:100%;
+  height:5vw;
+  text-align:center;
+  background-color: #FAFAFA;
+  font-size:3vw;
+  border-bottom: 1px solid #B8B8B8;
+  margin-bottom:3vw;
+}
+
+.field {
+  height:4vw;
+}
+
+.form {
+  width:50%;
+  margin: 0 auto 4vw auto;	
+}
+
+#sendBasicInfo, #sendRecommendation, #sendLicenseInfo {
+ background-color:#B8B8B8; 
+ width:100%;
+}
+
+//BASIC INFO
+
+#checkboxContainer {
+  margin-bottom: 2vw;
+}
+//HOMEPAGE
+
+#backgroundHomePage {
+  height: 20vw;
+  width: 100%;
+  position: absolute;
+  background-color: #FAFAFA;
+}
+
+#homePageLine{
+  margin-left:50%;
+  margin-top: 8%;
+  position:absolute;
+  border-right:1.2px solid #B8B8B8;
+  height: 35vw;
+  width:2vw;
+}
+
+#iphoneImage {
+  position:inline-block;
+  margin-top:10%;
+  margin-left:25%;
+  height: 2000%;
+  width:60%;
+  background-image: url("iphone-1.png");
+  background-repeat: no-repeat;
+  background-size:30%;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+}
+
+.user-box {
+  margin-left: 17vw;
+  color: #33CC33;
+  font-size: 200%;
+}
+
+.user-box-field {
+  margin-left: -13vw;
+  padding: 0em 17vw!important;
+}
+
+#login {
+}
+
+//MEDICATION PAGE
+
+.singleProductContainer {
+  margin: 0 auto 8vw auto;
+  width:93vw;
+  height:28vw;
+}
+
+.productImage {
+  background-size:100%;
+  display: inline-block;
+  float: left;
+  margin-right: 2vw;
+}
+
+.productDetails {
+  float: left;
+  width: 50vw;
+  height: 25vw;
+}
+
+.thc {
+  text-align:right;
+  font-size:1.4vw;
+  padding-bottom:0.2vw;
+  display:block;
+  width:100%;
+}
+
+
+.productNameAndDescription {
+  padding-bottom: 1vw;
+  letter-spacing:0.2vw;
+}
+
+.productName {
+  padding-top:2%;
+  display: inline-block;
+  width:100%;
+  letter-spacing:0.2vw;
+  text-align:center;
+  color:#33CC33;
+  font-size:2.8vw;
+  -webkit-margin-start:5%;
+  -moz-margin-start:5%;
+  margin: 0 auto;
+}
+
+.productDescription {
+  border-top: 1.2px solid;
+  border-bottom:1.2px solid;
+  text-align:center;
+  font-weight: 300;
+  font-size:1.4vw;
+  margin: 0 auto;
+}
+
+.amount {
+  font-size:2.2vw;
+  float:left;
+}
+
+.orderedAmount {
+  float:right;
+}
+
+.orderedAmount:hover{
+  color:#33CC33;
+}
+
+.less, .more {
+  font-size:2.0vw;
+  cursor: pointer;
+}
+
+.amountOrderedContainer {
+  margin-bottom: 1.2vw;
+  display:block;
+  width:100%;
+}
+
+///MAP PAGE
+
+#map_canvas { 
+  height: 80vh;
+}
+
+#map_canvas img{ 
+	max-width: none; 
+}
+
+#confirmButton {
+ color:#33CC33;	
+}
+
+//CONFIRM ORDER
+
+#sendButton {
+  color:#B8B8B8;
+}
+
+.singleProductOrderContainer {
+  display:block;
+  border-top: 1.2px solid #B8B8B8;
+  border-bottom: 1.2px solid #B8B8B8;
+  margin: 2vw auto auto;
+  width:93vw;
+  height:20vw;
+}
+
+.productNameOrder {
+  float:right;
+  margin-right: 18vw;
+  padding-top:0.5%;
+  display: inline-block;
+  width:40vw;
+  letter-spacing:0.2vw;
+  text-align:center;
+  font-size:2.5vw;
+  -webkit-margin-start:5%;
+  -moz-margin-start:5%;
+}
+
+.invoicesOrderContainer {
+  margin-top:2.5vw;
+  float:right;
+  position:absolute;
+  display:inline-block;
+  width:63.5vw;
+}
+
+.singleInvoice{
+  float:right;
+  clear:right;
+  font-size:1.8vw;	
+}
+
+#totalAmount {
+  clear:right;
+  display:block;
+  margin-right:4vw;
+  float:right;
+  font-size:2.5vw;
+  color:#33CC33;
+}
+
+#cashCreditContainer {
+  text-align: center;
+  float:left;
+  margin-top:1vw;
+  margin-left:4.4vw;
+}
+
+#cashButton, #creditButton {
+  float:left;
+  font-size:2vw;
+  height: 3vw;
+  width:8.5vw;
+  color:#B8B8B8;
+  border: 1px solid #B8B8B8;
+}
+
+#creditButton {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#cashButton {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+

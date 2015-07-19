@@ -1,0 +1,32 @@
+development: &default
+  adapter: sqlite3
+  database: MediBolt-Rails_development
+  encoding: utf8
+  host: localhost
+  min_messages: warning
+  pool: 2
+  timeout: 5000
+
+test:
+  <<: *default
+  database: MediBolt-Rails_test
+
+staging:
+  adapter: sqlite3
+  encoding: unicode
+  database: MediBolt-Rails_test
+  pool: 2
+  username:
+  password:
+  template: template0
+  host: localhost
+
+production:
+  adapter: sqlite3
+  encoding: unicode
+  database: MediBolt-Rails_test
+  pool: 2
+  username:
+  password:
+  template: template0
+  host: localhost

@@ -1,0 +1,23 @@
+<div class="topBar">
+  <span class="sans-font segueButton" id="sendButton">SEND ORDER >></span>
+</div>
+<% products.forEach(function(product){ %>
+  <div class="singleProductOrderContainer">
+    <p class="productNameOrder medium-grey sans-font"><%= product.get("name") %></p>
+    <img class="productImageOrder" style="background-image: url(<%= product.get("pic_url") %>); background-repeat:no-repeat; height:15vw; width:28vw; margin-top:2.5vw">  
+    <div class="invoicesOrderContainer">
+      <% product.get("invoices").forEach(function(invoice){ %>
+    	  <% if (invoice.get("quantity") > 0) { %>
+    	    <p class="singleInvoice medium-grey sans-font"><%= invoice.get("name") %>: US$<%= invoice.get("price") %>  x <%=invoice.get("quantity")%></p>
+    	  <% } %>
+    	<% }) %>
+    </div>
+  </div>
+<% }) %>
+<div id="cashCreditContainer">
+  <p id="creditButton">CREDIT</p>
+  <p id="cashButton">CASH</p>
+</div>
+<div id="totalAmount" class="medium-grey sans-font">
+  TOTAL: US$<%= products.total %>
+</div>

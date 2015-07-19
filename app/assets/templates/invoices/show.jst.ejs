@@ -1,0 +1,9 @@
+<div class="amountOrderedContainer sans-font medium-grey amount">
+  <% var pricing = price ? "US$" + price.toString() : "SOLD OUT" %>
+  <span class="amount"><%= name %>: <%= pricing %></span>
+  <span class="orderedAmount">
+    <span class="less">-</span>
+	<span class="gramsOrdered"><%= quantity %></span>
+    <span class="more">+</span>
+  </span>
+</div>
